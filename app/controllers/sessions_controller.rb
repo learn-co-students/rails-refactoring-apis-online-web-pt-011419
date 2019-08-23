@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
     # session[:username] = user_json["login"]
 
     # redirect_to '/'
-
+    session[:username] = github.get_username
     redirect_to root_path
   end
 end
