@@ -10,6 +10,7 @@ class SessionsController < ApplicationController
     user_json = JSON.parse(user_response.body)
     session[:username] = user_json["login"]
 
+
     redirect_to '/'
   end
 end
